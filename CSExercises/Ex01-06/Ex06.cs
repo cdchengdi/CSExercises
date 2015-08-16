@@ -8,9 +8,15 @@ namespace CSExercises
 {
     public class Ex06
     {
+        static int read()
+        {
+            return (Convert.ToInt32(Console.ReadLine()));
+        }
         public static void Main(string[] args)
         {
-            
+            Console.Write("Please input the number:");
+            int a =read();
+            Console.WriteLine("The square of {0} is {1}", a,(double) Math.Sqrt(a));  
         }
     }
 }
